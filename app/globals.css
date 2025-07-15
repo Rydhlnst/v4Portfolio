@@ -182,4 +182,34 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+  /* Scrollbar area */
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+
+  /* Track (background) */
+  ::-webkit-scrollbar-track {
+    background: var(--background, #fff);
+    border: 2px solid var(--primary, #000);
+    box-shadow: inset 0 0 0 2px var(--primary, #000);
+  }
+
+  /* Thumb (scroll handle) */
+  ::-webkit-scrollbar-thumb {
+    background-color: black;
+    border: 2px solid white;
+    box-shadow: 2px 2px 0 0 var(--primary, #000);
+    border-radius: 0;
+  }
+
+  /* Thumb on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--primary, #000);
+  }
+
+  /* Scrollbar corner (bottom-right) */
+  ::-webkit-scrollbar-corner {
+    background: white;
+  }
 }

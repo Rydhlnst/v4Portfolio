@@ -10,6 +10,7 @@ type DiagonalBannerProps = {
   degree?: number
   left?: string | number
   top?: string | number
+  textOverride?: string // Tambahan untuk teks custom
 }
 
 const DiagonalBanner = ({
@@ -18,8 +19,9 @@ const DiagonalBanner = ({
   degree = -15,
   left = '50%',
   top = '50%',
+  textOverride,
 }: DiagonalBannerProps) => {
-  const text = items.join(' • ')
+  const text = textOverride || items.join(' • ')
 
   return (
     <div
@@ -58,7 +60,6 @@ const DiagonalBanner = ({
                   className={cn(
                     'mx-4 inline-block uppercase tracking-wide px-10 py-3 lg:py-4',
                     'shadow-[8px_4px_0_rgba(0,0,0,1)] border border-black',
-                    // Style brutalist: hard edges, thick font, harsh contrast
                     isSecond
                       ? 'bg-white text-black'
                       : isEven

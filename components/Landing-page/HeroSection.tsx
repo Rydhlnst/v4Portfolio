@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
+import DiagonalBanner from './DiagonalBanner'
 
 // Membuat komponen Button yang bisa dianimasikan oleh Framer Motion
 const MotionButton = motion(Button)
@@ -11,8 +12,13 @@ const HeroSection = () => {
   return (
     <section className="relative w-full border-t border-b border-foreground bg-background text-foreground">
       {/* Background solid dengan kesan tegas (tanpa blur atau glow) */}
-      <div className="absolute inset-0 -z-10 bg-background" />
+      {/* <div className="absolute inset-0 -z-10 bg-background" /> */}
 
+      {/* <div className='-rotate-90 absolute top-1/2 left-1/10 z-50'>
+        <p>Designeer</p>
+      </div> */}
+      <DiagonalBanner textOverride="DESIGNEER STUDIO" degree={93} top="260%" left="12.3%" className='hidden lg:block'/>
+        
       <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl items-center justify-center px-4 py-20 text-center sm:text-left md:px-8">
         <div className="space-y-10">
           {/* Headline */}
