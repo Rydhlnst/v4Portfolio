@@ -17,7 +17,9 @@ const HeroSection = () => {
       {/* <div className='-rotate-90 absolute top-1/2 left-1/10 z-50'>
         <p>Designeer</p>
       </div> */}
-      <DiagonalBanner textOverride="DESIGNEER STUDIO" degree={93} top="260%" left="12.3%" className='hidden lg:block'/>
+      <DiagonalBanner textOverride="DESIGNEER — UI/UX, Web, and Mobile Product Studio" degree={93} top="170%" left="12.3%" className='hidden lg:block'/>
+      <DiagonalBanner degree={30} left={"95%"} top={"35%"}/>
+      <DiagonalBanner degree={-10} top={"90%"} className=""/>
         
       <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl items-center justify-center px-4 py-20 text-center sm:text-left md:px-8">
         <div className="space-y-10">

@@ -26,7 +26,7 @@ const DiagonalBanner = ({
   return (
     <div
       className={cn(
-        'pointer-events-none fixed inset-0 z-[60] overflow-hidden',
+        'pointer-events-none absolute inset-0 z-[60] overflow-hidden',
         className
       )}
     >
