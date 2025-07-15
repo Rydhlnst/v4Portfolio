@@ -1,4 +1,3 @@
-import BotButtonWithDialog from "@/components/Landing-page/BotButton";
 import DiagonalBanner from "@/components/Landing-page/DiagonalBanner";
 import HeroSection from "@/components/Landing-page/HeroSection";
 

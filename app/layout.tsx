@@ -4,6 +4,7 @@ import './globals.css'
 import Navbar from '@/components/Landing-page/Navbar'
 import BotButtonWithDialog from '@/components/Landing-page/BotButton'
 import { SmoothCursor } from '@/components/ui/smooth-cursor'
+import LoadingScreen from '@/components/Animation/LoadingScreen'
 
 // Brutalist Sans for heading & UI
 const spaceGrotesk = Space_Grotesk({
@@ -59,6 +60,7 @@ export default function RootLayout({
       <body
         className={`${spaceGrotesk.variable} ${geistMono.variable} font-sans antialiased bg-background text-foreground`}
       >
+        <LoadingScreen/>
         <Navbar />
         <main>{children}</main>
         <SmoothCursor/>
