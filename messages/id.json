@@ -4,163 +4,172 @@
       "part1": "Desain. Kode.",
       "part2": "Pengalaman."
     },
-    "subheading": "Kami membangun website yang berfungsi dan berkesan — desain tajam, UX kuat, dan performa maksimal.",
+    "subheading": "Kami membangun situs web yang fungsional dan berkesan — desain tajam, UX yang kuat, dan performa maksimal.",
     "cta": {
       "portfolio": "Lihat Portofolio",
-      "contact": "Mari Berkolaborasi"
+      "contact": "Mari Kolaborasi"
     }
   },
   "faq": {
-    "heading": "Punya Pertanyaan?",
-    "subheading": "Temukan jawaban atas pertanyaan umum di bawah ini, atau kirimkan pertanyaan Anda. Kami siap membantu.",
-    "stillQuestion": "Masih ada pertanyaan?",
+    "heading": "Ada Pertanyaan?",
+    "subheading": "Temukan jawaban dari pertanyaan umum di bawah ini, atau ajukan pertanyaanmu sendiri. Kami siap membantu.",
+    "stillQuestion": "Masih punya pertanyaan?",
     "viewAll": "Lihat Semua FAQ",
     "form": {
       "name": "Nama",
       "email": "Email",
       "question": "Pertanyaan",
       "placeholder": {
-        "name": "Masukkan nama Anda",
-        "email": "Masukkan email Anda",
-        "question": "Tulis pertanyaan Anda di sini..."
+        "name": "Masukkan namamu",
+        "email": "Masukkan emailmu",
+        "question": "Tulis pertanyaanmu di sini..."
       },
-      "submit": "Kirim Pesan Anda"
+      "submit": "Kirim Pesanmu"
     },
     "list": [
       {
-        "question": "Berapa lama waktu yang dibutuhkan untuk menyelesaikan proyek pengembangan web?",
-        "answer": "Waktunya bervariasi tergantung pada kompleksitas dan kebutuhan proyek. Tim kami berusaha untuk menyelesaikan tepat waktu dengan kualitas terbaik."
+        "question": "Berapa lama waktu pengerjaan proyek pengembangan web?",
+        "answer": "Waktu pengerjaan tergantung kompleksitas dan kebutuhan proyek. Kami berkomitmen mengirimkan tepat waktu dengan kualitas terbaik."
       },
       {
-        "question": "Apakah kalian bisa menangani proyek aplikasi mobile berskala besar?",
-        "answer": "Tentu, tim kami berpengalaman membangun dan menskalakan aplikasi yang digunakan oleh ribuan pengguna lintas platform."
+        "question": "Apakah kalian bisa menangani proyek pengembangan aplikasi mobile skala besar?",
+        "answer": "Ya, tim kami berpengalaman membangun dan mengelola aplikasi yang digunakan ribuan pengguna lintas platform."
       },
       {
-        "question": "Bisakah kalian mengintegrasikan API pihak ketiga ke aplikasi kami?",
-        "answer": "Tentu. Kami sering bekerja dengan berbagai API, mulai dari payment gateway hingga layanan AI."
+        "question": "Bisakah kalian mengintegrasikan API pihak ketiga ke dalam aplikasi mobile kami?",
+        "answer": "Tentu saja. Kami sering bekerja dengan berbagai API, dari pembayaran hingga layanan AI."
       },
       {
-        "question": "Bagaimana kalian memastikan kompatibilitas lintas platform untuk aplikasi mobile?",
-        "answer": "Kami mengikuti panduan platform dan menggunakan framework seperti React Native untuk performa terbaik di semua platform."
+        "question": "Bagaimana kalian menjamin kompatibilitas lintas platform untuk aplikasi mobile?",
+        "answer": "Kami mengikuti pedoman masing-masing platform dan menggunakan framework seperti React Native untuk memastikan performa dan kompatibilitas."
       },
       {
-        "question": "Apa pendekatan kalian terhadap desain user experience (UX)?",
-        "answer": "Pendekatan UX kami berbasis riset, kolaboratif, dan iteratif. Kami mengutamakan kegunaan dan konsistensi brand."
+        "question": "Apa pendekatan kalian terhadap desain pengalaman pengguna (UX)?",
+        "answer": "Pendekatan kami berbasis riset, kolaboratif, dan iteratif. Kami mengutamakan kegunaan dan konsistensi brand."
       }
     ]
   },
   "cta": {
     "title": {
-        "part1": "Ayo Bangun",
-        "part2": "Sesuatu yang",
-        "highlight": "Hebat"
+      "part1": "Mari Bangun",
+      "part2": "Sesuatu yang",
+      "highlight": "Hebat"
     },
-    "description": "Ingin mulai proyek baru, redesign aplikasi, atau konsultasi ide? Kami siap bantu wujudkan dengan strategi, desain, dan eksekusi terbaik.",
+    "description": "Ingin memulai proyek baru, mendesain ulang aplikasi, atau konsultasi ide? Kami siap bantu mewujudkannya dengan strategi, desain, dan eksekusi.",
     "button": "Hubungi Kami"
-    },
-    "features": {
-  "heading": {
-    "part1": "Fitur",
-    "part2": "Unggulan"
   },
-  "list": [
-        {
+  "features": {
+    "heading": {
+      "part1": "Fitur",
+      "part2": "Kami"
+    },
+    "list": [
+      {
         "icon": "Palette",
         "title": "Desain UI/UX",
-        "description": "Desain estetis dan intuitif, berfokus pada user journey dan branding yang kuat."
-        },
-        {
+        "description": "Desain estetis dan intuitif berfokus pada perjalanan pengguna dan branding yang kuat."
+      },
+      {
         "icon": "Code",
         "title": "Pengembangan Web",
-        "description": "Dibangun dengan teknologi modern seperti Next.js, Tailwind, dan performa terbaik."
-        },
-        {
+        "description": "Dibangun dengan teknologi modern seperti Next.js dan Tailwind, dioptimalkan untuk performa."
+      },
+      {
         "icon": "DeviceMobile",
         "title": "Siap Mobile",
-        "description": "Responsif sejak awal, optimal di setiap ukuran layar dan platform."
-        },
-        {
+        "description": "Responsif sejak awal, optimal di berbagai ukuran layar dan platform."
+      },
+      {
         "icon": "Rocket",
-        "title": "Dukungan Launch",
-        "description": "Mulai dari testing, QA, hingga deployment — kami bantu sampai live."
-        },
-        {
+        "title": "Dukungan Peluncuran",
+        "description": "Mulai dari testing dan QA hingga deployment — kami bantu hingga live."
+      },
+      {
         "icon": "Repeat",
         "title": "Iterasi Cepat",
-        "description": "Proses desain & dev yang iteratif dan adaptif terhadap feedback."
-        },
-        {
+        "description": "Proses desain dan pengembangan iteratif yang tanggap terhadap feedback."
+      },
+      {
         "icon": "Monitor",
-        "title": "Pemikiran Produk",
-        "description": "Kami bantu bukan hanya \"ngoding\", tapi berpikir produk & value-nya."
-        }
+        "title": "Pola Pikir Produk",
+        "description": "Kami tidak hanya 'ngoding', tapi juga bantu berpikir produk dan memberikan nilai."
+      }
     ]
+  },
+  "testimonials": {
+    "heading": "Kata Klien Kami",
+    "description": "Ulasan nyata dari brand dan founder yang telah bekerja sama dengan Designeer untuk meluncurkan produk luar biasa.",
+    "list": [
+      {
+        "logo": "/icon/spotify.svg",
+        "alt": "Spotify",
+        "background": "bg-background",
+        "job": "text-muted-foreground",
+        "quote": "“Designeer membuat yang sulit terasa mulus. Dari hari pertama, presisi desain dan kode mereka bikin kami kagum.”",
+        "name": "Amira Lee",
+        "position": "Product Lead, Spotify",
+        "fallback": "AL"
+      },
+      {
+        "logo": "/icon/stripe.svg",
+        "alt": "Stripe",
+        "background": "bg-secondary",
+        "job": "text-white",
+        "quote": "“Kerja bareng Designeer serasa punya tim internal. Cepat, berani, dan pixel-perfect.”",
+        "name": "Jason Roy",
+        "position": "CTO, Stripe",
+        "fallback": "JR"
+      },
+      {
+        "logo": "/icon/notion.svg",
+        "alt": "Notion",
+        "background": "bg-background",
+        "job": "text-muted-foreground",
+        "quote": "“Arah visual berani dari Designeer membantu kami mendefinisikan ulang kepribadian dan alur pengguna aplikasi kami.”",
+        "name": "Claire Tan",
+        "position": "Lead UX, Notion",
+        "fallback": "CT"
+      }
+    ]
+  },
+  "about": {
+    "studioName": "Designeer",
+    "headline": {
+      "part1": "Kami tidak hanya membangun",
+      "highlight1": "situs web.",
+      "part2": "Kami membangun warisan",
+      "highlight2": "digital."
     },
-    "testimonials": {
-        "heading": "Kata Mereka",
-        "description": "Testimoni langsung dari brand dan founder yang telah bermitra dengan Designeer untuk meluncurkan produk luar biasa.",
-        "list": [
-            {
-            "logo": "/icon/spotify.svg",
-            "alt": "Spotify",
-            "background": "bg-background",
-            "job": "text-muted-foreground",
-            "quote": "“Designeer membuat hal yang mustahil jadi terasa mulus. Sejak awal, presisi desain dan kejernihan kode mereka membuat tim kami terkesan.”",
-            "name": "Amira Lee",
-            "position": "Product Lead, Spotify",
-            "fallback": "AL"
-            },
-            {
-            "logo": "/icon/stripe.svg",
-            "alt": "Stripe",
-            "background": "bg-secondary",
-            "job": "text-white",
-            "quote": "“Bekerja dengan Designeer terasa seperti punya tim internal sendiri. Cepat, berani, dan presisi.”",
-            "name": "Jason Roy",
-            "position": "CTO, Stripe",
-            "fallback": "JR"
-            },
-            {
-            "logo": "/icon/notion.svg",
-            "alt": "Notion",
-            "background": "bg-background",
-            "job": "text-muted-foreground",
-            "quote": "“Arah visual berani dari Designeer membantu mendefinisikan ulang kepribadian dan alur pengguna aplikasi kami.”",
-            "name": "Claire Tan",
-            "position": "Lead UX, Notion",
-            "fallback": "CT"
-            }
-        ]
+    "paragraph1": "adalah studio kreatif digital yang berfokus pada desain UI dan pengembangan web. Kami percaya bahwa desain yang berani dan fungsional adalah fondasi dari pengalaman digital yang hebat.",
+    "paragraph2": "Setiap proyek yang kami buat dirancang untuk meninggalkan kesan — secara visual, logis, dan emosional.",
+    "principlesTitle": "Prinsip Inti Kami",
+    "principles": [
+      "Fungsi Nomor Satu",
+      "Desain dengan Semangat",
+      "Kode yang Bisa Diskalakan",
+      "Detail Itu Penting",
+      "Tahan Lama & Andal"
+    ]
+  },
+  "navbar": {
+    "menu": "Menu",
+    "menuItems": {
+      "about": "Tentang",
+      "services": "Layanan",
+      "portfolio": "Portofolio",
+      "contact": "Kontak"
     },
-    "about": {
-        "studioName": "Designeer",
-        "headline": {
-            "part1": "Kami tidak hanya membangun",
-            "highlight1": "website.",
-            "part2": "Kami membangun warisan digital",
-            "highlight2": "yang bertahan lama."
-        },
-        "paragraph1": "adalah studio kreatif berbasis digital yang berfokus pada desain antarmuka dan pengembangan web. Kami percaya bahwa desain yang berani dan fungsional adalah fondasi dari pengalaman digital yang hebat.",
-        "paragraph2": "Setiap proyek kami dirancang untuk meninggalkan kesan — baik secara visual, logis, maupun emosional.",
-        "principlesTitle": "Prinsip Inti Kami",
-        "principles": [
-            "Fungsi Diutamakan",
-            "Desain dengan Keberanian",
-            "Kode yang Dapat Diskalakan",
-            "Detail Itu Penting",
-            "Dibuat untuk Bertahan"
-        ]
-    },
-    "navbar": {
-        "menu": "Menu",
-        "menuItems": {
-            "about": "Tentang Kami",
-            "services": "Layanan",
-            "portfolio": "Portofolio",
-            "contact": "Hubungi Kami"
-        },
-        "followUs": "Ikuti Kami"
-    }
-
-
+    "followUs": "Ikuti Kami"
+  },
+  "bot": {
+    "title": "DesigneerBot",
+    "welcome": "Hai! Ada yang bisa kami bantu seputar layanan desain dan pengembangan kami hari ini?",
+    "placeholder": "Ketik pesanmu...",
+    "quickReplies": [
+      "Layanan apa saja yang tersedia?",
+      "Berapa biayanya?",
+      "Bagaimana cara menghubungi?"
+    ],
+    "send": "Kirim Pesan"
+  }
 }

@@ -36,29 +36,32 @@ const Navbar = () => {
       transition={{ duration: 0.6, ease: 'easeOut' }}
       className="w-full fixed top-0 left-0 z-[90] bg-background border-b border-black"
     >
-      <div className="container mx-auto flex h-20 items-center justify-between px-4 relative">
+      <div className="container mx-auto h-20 px-4 grid grid-cols-3 items-center relative">
         {/* Left Side: Language Selector */}
-        <LanguageSelector />
+       <div className="justify-self-start">
+          <LanguageSelector />
+        </div>
 
         {/* Center: Brand Title */}
-        <motion.h1
-          className="text-2xl md:text-3xl font-extrabold uppercase tracking-tight text-foreground"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3 }}
-        >
-          designeer
-        </motion.h1>
+          <motion.h1
+            className="text-2xl md:text-3xl font-extrabold uppercase tracking-tight text-foreground justify-self-center"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.3 }}
+          >
+            designeer
+          </motion.h1>
+
 
         {/* Right Side: Actions */}
-        <div className="flex items-center gap-3 relative">
-          <Button
-            type="button"
-            aria-label="Search"
-            variant="outline"
-            className="rounded-none border-2 border-black text-foreground font-bold shadow-[2px_2px_0px_black] hover:bg-primary hover:text-background transition"
-          >
-            <MagnifyingGlass size={18} weight="bold" />
+        <div className="flex items-center gap-3 justify-self-end">
+            <Button
+              type="button"
+              aria-label="Search"
+              variant="outline"
+              className="rounded-none border-2 border-black text-foreground font-bold shadow-[2px_2px_0px_black] hover:bg-primary hover:text-background transition"
+            >
+              <MagnifyingGlass size={18} weight="bold" />
           </Button>
 
           {/* Menu Button */}

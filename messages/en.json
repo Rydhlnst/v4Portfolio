@@ -160,8 +160,12 @@
             "contact": "Contact"
         },
         "followUs": "Follow Us"
+    },
+    "bot": {
+      "title": "DesigneerBot",
+      "welcome": "Hi! Is there anything we can help you with regarding our design and development services today?",
+      "placeholder": "Type your message...",
+      "quickReplies": ["What services do you offer?", "How much does it cost?", "How to contact?"],
+      "send": "Send Message"
     }
-
-
-
 }

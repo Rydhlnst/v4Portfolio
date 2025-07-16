@@ -18,7 +18,9 @@ export default function FooterSection() {
       <div className="mx-auto max-w-5xl px-6 text-center">
         {/* Brand Title */}
         <h2 className="text-3xl md:text-4xl font-extrabold uppercase tracking-tight shadow-[4px_4px_0px_black] inline-block px-4 py-2 border-2 border-black bg-white">
-          Designeer
+            <span className="inline-block border-2 border-black bg-secondary px-4 py-1 text-background shadow-[6px_4px_0_rgba(0,0,0,1)]">
+                Designeer
+            </span>
         </h2>
 
         {/* Menu Links */}
