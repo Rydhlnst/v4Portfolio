@@ -85,7 +85,7 @@ const OurWorkCarousel = () => {
 
         {/* CTA Button */}
         <div className="mt-12 flex justify-center">
-          <Link href="/portfolio">
+          <Link href="/project">
             <Button
               size="lg"
               className="uppercase text-base font-bold border-2 border-black shadow-[4px_4px_0px_black] rounded-none hover:shadow-[6px_6px_0px_black] transition-all"

@@ -1,4 +1,5 @@
 import BotButtonWithDialog from '@/components/Landing-page/BotButton';
+import Footer from '@/components/Landing-page/Footer';
 import Navbar from '@/components/Landing-page/Navbar';
 import { routing } from '@/i18n/routing';
 import {NextIntlClientProvider, hasLocale} from 'next-intl';
@@ -24,6 +25,7 @@ export default async function LocaleLayout({
             <Navbar/>
             {children}
             <BotButtonWithDialog/>
+            <Footer/>
         </NextIntlClientProvider>
       </body>
     </html>

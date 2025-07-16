@@ -9,10 +9,10 @@ import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 
 const menuItems = [
-  { key: 'about', href: '#about' },
-  { key: 'services', href: '#services' },
-  { key: 'portfolio', href: '#portfolio' },
-  { key: 'contact', href: '#contact' },
+  { key: 'about', href: '/#about' },
+  { key: 'services', href: '/#services' },
+  { key: 'portfolio', href: '/#portfolio' },
+  { key: 'contact', href: '/#contact' },
 ]
 
 const icon = [

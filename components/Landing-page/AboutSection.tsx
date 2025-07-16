@@ -33,7 +33,7 @@ const AboutSection = () => {
   const principles = t.raw('principles') as string[]
 
   return (
-    <section className="w-full border-t-2 border-black bg-background py-24 md:py-32">
+    <section className="w-full border-t-2 border-black bg-background py-24 md:py-32" id='about'>
       <div className="max-w-6xl mx-auto px-4 space-y-20 md:space-y-28">
         {/* Intro Section */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">

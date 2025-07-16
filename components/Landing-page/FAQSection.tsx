@@ -40,7 +40,7 @@ export default function FaqSection() {
   const faqList = t.raw('list') as { question: string; answer: string }[]
 
   return (
-    <section className="py-24 border-t border-b border-black bg-background text-foreground">
+    <section className="py-24 border-t border-b border-black bg-background text-foreground" id='contact'>
       <div className="max-w-6xl mx-auto px-6 space-y-20">
         {/* Judul */}
         <motion.div

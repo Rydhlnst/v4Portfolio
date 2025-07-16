@@ -5,7 +5,7 @@ import OurWorkCarousel from './OurWorkCarousel'
 
 const OurWorksSection = () => {
   return (
-    <section className="w-full py-24  bg-background border-t-2 border-black" id='our-works'>
+    <section className="w-full py-24  bg-background border-t-2 border-black" id='portfolio'>
       <div className="max-w-6xl px-4 mx-auto space-y-16">
         <OurWorkCarousel />
       </div>
