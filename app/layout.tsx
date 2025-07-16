@@ -1,9 +1,6 @@
 import type { Metadata } from 'next'
 import { Geist_Mono, Space_Grotesk } from 'next/font/google'
 import './globals.css'
-import Navbar from '@/components/Landing-page/Navbar'
-import BotButtonWithDialog from '@/components/Landing-page/BotButton'
-import { SmoothCursor } from '@/components/ui/smooth-cursor'
 import LoadingScreen from '@/components/Animation/LoadingScreen'
 
 // Brutalist Sans for heading & UI
@@ -61,10 +58,7 @@ export default function RootLayout({
         className={`${spaceGrotesk.variable} ${geistMono.variable} font-sans antialiased bg-background text-foreground`}
       >
         <LoadingScreen/>
-        <Navbar />
         <main>{children}</main>
-        <SmoothCursor/>
-        <BotButtonWithDialog />
       </body>
     </html>
   )

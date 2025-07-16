@@ -38,7 +38,7 @@ const OurWorkCard = ({
   category,
   description,
   technologies,
-  teamAvatars,
+  // teamAvatars,
   imageUrl,
   liveUrl,
 }: OurWorkCardProps) => {
@@ -101,7 +101,7 @@ const OurWorkCard = ({
                     {technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="text-sm font-semibold border-2 border-black px-3 py-1 shadow-[2px_2px_0px_black] bg-background"
+                        className="text-sm font-semibold border-2 border-black px-3 py-1 shadow-[2px_2px_0px_black] bg-background hover:bg-secondary"
                       >
                         {tech}
                       </span>

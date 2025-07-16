@@ -1,17 +1,29 @@
 'use client'
 
-import React, { useState } from 'react'
-import { motion } from 'framer-motion'
+import { usePathname, useRouter } from 'next/navigation'
+import { useParams } from 'next/navigation'
+import { motion, AnimatePresence } from 'framer-motion'
 import { cn } from '@/lib/utils'
+import React, { useState } from 'react'
 
 const LanguageSelector = () => {
   const [open, setOpen] = useState(false)
-  const [lang, setLang] = useState<'EN' | 'ID'>('EN') // Default EN
 
-  const handleSelect = (newLang: 'EN' | 'ID') => {
-    setLang(newLang)
+  const router = useRouter()
+  const pathname = usePathname()
+  const params = useParams()
+
+  const currentLocale = params.locale as 'en' | 'id' || 'en'
+
+  const handleSelect = (newLocale: 'en' | 'id') => {
     setOpen(false)
-    // opsional: localStorage.setItem('lang', newLang)
+
+    // Replace the locale in URL
+    const segments = pathname.split('/')
+    segments[1] = newLocale // because [locale] is always at index 1
+    const newPath = segments.join('/')
+
+    router.push(newPath)
   }
 
   return (
@@ -24,30 +36,32 @@ const LanguageSelector = () => {
         )}
         aria-label="Toggle Language Dropdown"
       >
-        {lang}
+        {currentLocale.toUpperCase()}
       </button>
 
-      {open && (
-        <motion.div
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0 }}
-          className="absolute left-0 mt-2 w-full border border-black bg-white shadow-[3px_3px_0px_black] z-50"
-        >
-          {['EN', 'ID'].map((item) => (
-            <button
-              key={item}
-              onClick={() => handleSelect(item as 'EN' | 'ID')}
-              className={cn(
-                'w-full px-3 py-2 text-left text-sm font-semibold uppercase hover:bg-black hover:text-white',
-                item === lang && 'bg-black text-white'
-              )}
-            >
-              {item}
-            </button>
-          ))}
-        </motion.div>
-      )}
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            className="absolute left-0 mt-2 w-full border border-black bg-white shadow-[3px_3px_0px_black] z-50"
+          >
+            {['en', 'id'].map((item) => (
+              <button
+                key={item}
+                onClick={() => handleSelect(item as 'en' | 'id')}
+                className={cn(
+                  'w-full px-3 py-2 text-left text-sm font-semibold uppercase hover:bg-black hover:text-white',
+                  item === currentLocale && 'bg-black text-white'
+                )}
+              >
+                {item.toUpperCase()}
+              </button>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   )
 }
