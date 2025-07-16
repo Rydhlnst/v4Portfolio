@@ -5,8 +5,9 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import OurWorkCard from './OurWorksCard'
+import Link from 'next/link'
 
-// Dummy project list — nanti bisa di-*map* dari prop
+// Dummy project list
 const projects = [
   {
     title: 'Zenith Fitness App',
@@ -28,7 +29,6 @@ const projects = [
     teamAvatars: ['/avatars/avatar-2.jpg', '/avatars/avatar-4.jpg'],
     imageUrl: '/images/work-glowy.jpg',
   },
-  // Add more projects as needed
 ]
 
 const OurWorkCarousel = () => {
@@ -43,18 +43,20 @@ const OurWorkCarousel = () => {
   }
 
   return (
-    <section className="relative w-full pb-6 border-foreground">
-      <div className="max-w-7xl mx-auto px-4 md:px-6">
+    <section className="relative w-full pb-12 border-foreground">
+      <div className="max-w-6xl mx-auto">
+        {/* Header */}
         <div className="flex items-center justify-between mb-8">
-            <motion.h2
-                      initial={{ opacity: 0, y: 40 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true, margin: '-100px' }}
-                      transition={{ duration: 0.8, ease: 'easeOut' }}
-                      className="text-4xl md:text-6xl font-extrabold uppercase tracking-tight text-center"
-                    >
-                      Our <span className="border border-black px-2 bg-primary text-background shadow-[4px_4px_0px_black]">Works</span>
-            </motion.h2>
+          <motion.h2
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-100px' }}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
+            className="text-4xl md:text-6xl font-extrabold uppercase tracking-tight text-center"
+          >
+            Our <span className="border border-black px-2 bg-primary text-background shadow-[4px_4px_0px_black]">Works</span>
+          </motion.h2>
+
           <div className="flex gap-2">
             <Button variant="outline" size="icon" onClick={handlePrev}>
               <ArrowLeft className="w-4 h-4" />
@@ -65,19 +67,32 @@ const OurWorkCarousel = () => {
           </div>
         </div>
 
+        {/* Carousel */}
         <div className="relative overflow-hidden">
           <AnimatePresence mode="wait">
             <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.98 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.98 }}
-                transition={{ duration: 0.5, ease: 'easeOut' }}
-                className="w-full"
+              key={index}
+              initial={{ opacity: 0, scale: 0.98 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.98 }}
+              transition={{ duration: 0.5, ease: 'easeOut' }}
+              className="w-full"
             >
-                <OurWorkCard {...projects[index]} />
+              <OurWorkCard {...projects[index]} />
             </motion.div>
-        </AnimatePresence>
+          </AnimatePresence>
+        </div>
+
+        {/* CTA Button */}
+        <div className="mt-12 flex justify-center">
+          <Link href="/portfolio">
+            <Button
+              size="lg"
+              className="uppercase text-base font-bold border-2 border-black shadow-[4px_4px_0px_black] rounded-none hover:shadow-[6px_6px_0px_black] transition-all"
+            >
+              See All Works
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

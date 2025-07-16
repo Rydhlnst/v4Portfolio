@@ -44,7 +44,7 @@ const OurWorkCard = ({
 }: OurWorkCardProps) => {
   return (
     <section className="pt-6">
-      <div className="max-w-7xl mx-auto px-4 space-y-12">
+      <div className="max-w-7xl mx-auto space-y-12">
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -112,7 +112,7 @@ const OurWorkCard = ({
                 <div className="space-y-3">
                   <h4 className="font-bold uppercase text-base tracking-wider">Core Team</h4>
                   <div className="flex -space-x-3">
-                    {teamAvatars.map((avatar, idx) => (
+                    {/* {teamAvatars.map((avatar, idx) => (
                       <Image
                         key={idx}
                         src={avatar}
@@ -125,7 +125,7 @@ const OurWorkCard = ({
                             'https://placehold.co/40x40/e5e5e5/18181b?text=A'
                         }}
                       />
-                    ))}
+                    ))} */}
                   </div>
                 </div>
               </div>
