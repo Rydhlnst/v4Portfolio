@@ -1,4 +1,167 @@
 {
-  "testimonials.heading": "What Our Clients Say",
-  "testimonials.description": "Real feedback from brands and founders who’ve partnered with Designeer to launch outstanding products."
+  "hero": {
+    "title": {
+      "part1": "Design. Code.",
+      "part2": "Experience."
+    },
+    "subheading": "We build websites that are functional and memorable — sharp design, strong UX, and maximum performance.",
+    "cta": {
+      "portfolio": "View Portfolio",
+      "contact": "Let’s Collaborate"
+    }
+  },
+  "faq": {
+    "heading": "Have Questions?",
+    "subheading": "Find answers to common questions below, or ask your own. We're here to help.",
+    "stillQuestion": "Still have a question?",
+    "viewAll": "View All FAQs",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "question": "Question",
+      "placeholder": {
+        "name": "Enter your name",
+        "email": "Enter your email",
+        "question": "Enter your question here..."
+      },
+      "submit": "Send Your Message"
+    },
+    "list": [
+      {
+        "question": "How long does it take to complete a web development project?",
+        "answer": "The timeline varies depending on the project's complexity and requirements. Our team strives to deliver projects on time while maintaining the highest quality standards."
+      },
+      {
+        "question": "Can you handle large-scale mobile app development projects?",
+        "answer": "Yes, our team is experienced in building and scaling apps used by thousands of users across platforms."
+      },
+      {
+        "question": "Can you integrate third-party APIs into our mobile app?",
+        "answer": "Absolutely. We frequently work with various APIs, from payment gateways to AI services."
+      },
+      {
+        "question": "How do you ensure cross-platform compatibility for mobile apps?",
+        "answer": "We follow platform guidelines and use frameworks like React Native to ensure compatibility and performance."
+      },
+      {
+        "question": "What is your approach to user experience (UX) design?",
+        "answer": "Our UX approach is research-driven, collaborative, and iterative. We prioritize usability and brand consistency."
+      }
+    ]
+  },
+  "cta": {
+    "title": {
+        "part1": "Let's Build",
+        "part2": "Something",
+        "highlight": "Great"
+    },
+    "description": "Want to start a new project, redesign your app, or consult an idea? We're ready to help you bring it to life with strategy, design, and execution.",
+    "button": "Contact Us"
+    },
+    "features": {
+  "heading": {
+    "part1": "Our",
+    "part2": "Features"
+  },
+  "list": [
+        {
+        "icon": "Palette",
+        "title": "UI/UX Design",
+        "description": "Aesthetic and intuitive design focused on user journey and strong branding."
+        },
+        {
+        "icon": "Code",
+        "title": "Web Development",
+        "description": "Built with modern technologies like Next.js and Tailwind, optimized for performance."
+        },
+        {
+        "icon": "DeviceMobile",
+        "title": "Mobile Ready",
+        "description": "Responsive from the ground up, optimized across screen sizes and platforms."
+        },
+        {
+        "icon": "Rocket",
+        "title": "Launch Support",
+        "description": "From testing and QA to deployment — we support you through go-live."
+        },
+        {
+        "icon": "Repeat",
+        "title": "Rapid Iteration",
+        "description": "Iterative design & development process responsive to feedback."
+        },
+        {
+        "icon": "Monitor",
+        "title": "Product Thinking",
+        "description": "We help not just with 'coding', but product thinking and delivering value."
+        }
+    ]
+    },
+    "testimonials": {
+        "heading": "What Our Clients Say",
+        "description": "Real feedback from brands and founders who’ve partnered with Designeer to launch outstanding products.",
+        "list": [
+            {
+            "logo": "/icon/spotify.svg",
+            "alt": "Spotify",
+            "background": "bg-background",
+            "job": "text-muted-foreground",
+            "quote": "“Designeer made the impossible feel seamless. From day one, their design precision and code clarity impressed our team.”",
+            "name": "Amira Lee",
+            "position": "Product Lead, Spotify",
+            "fallback": "AL"
+            },
+            {
+            "logo": "/icon/stripe.svg",
+            "alt": "Stripe",
+            "background": "bg-secondary",
+            "job": "text-white",
+            "quote": "“Working with Designeer felt like having an internal team. Fast, bold, and pixel-perfect.”",
+            "name": "Jason Roy",
+            "position": "CTO, Stripe",
+            "fallback": "JR"
+            },
+            {
+            "logo": "/icon/notion.svg",
+            "alt": "Notion",
+            "background": "bg-background",
+            "job": "text-muted-foreground",
+            "quote": "“The bold visual direction from Designeer helped redefine our app’s personality and user flow.”",
+            "name": "Claire Tan",
+            "position": "Lead UX, Notion",
+            "fallback": "CT"
+            }
+        ]
+        },
+    "about": {
+        "studioName": "Designeer",
+        "headline": {
+            "part1": "We're not just building",
+            "highlight1": "websites.",
+            "part2": "We're building digital",
+            "highlight2": "legacies."
+        },
+        "paragraph1": "is a digital-based creative studio focused on UI design and web development. We believe bold and functional design is the foundation of a great digital experience.",
+        "paragraph2": "Every project we craft is made to leave an impression — visually, logically, and emotionally.",
+        "principlesTitle": "Our Core Principles",
+        "principles": [
+            "Function First",
+            "Design with Grit",
+            "Code that Scales",
+            "Details Matter",
+            "Built to Last"
+        ]
+    },
+    "navbar": {
+        "menu": "Menu",
+        "menuItems": {
+            "about": "About Us",
+            "services": "Services",
+            "portfolio": "Portfolio",
+            "contact": "Contact"
+        },
+        "followUs": "Follow Us"
+    }
+
+
+
 }

@@ -6,23 +6,25 @@ import { Button } from '../ui/button'
 import { motion, AnimatePresence } from 'framer-motion'
 import LanguageSelector from './LanguageSelector'
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 
 const menuItems = [
-  { label: 'Tentang Kami', href: '#about' },
-  { label: 'Layanan', href: '#services' },
-  { label: 'Portofolio', href: '#portfolio' },
-  { label: 'Hubungi Kami', href: '#contact' },
+  { key: 'about', href: '#about' },
+  { key: 'services', href: '#services' },
+  { key: 'portfolio', href: '#portfolio' },
+  { key: 'contact', href: '#contact' },
 ]
 
 const icon = [
-  { label: "Github", icon: GithubLogo, href:""},
-  { label: "Linkedin", icon: LinkedinLogo, href:""},
-  { label: "Instagram", icon: InstagramLogo, href:""},
-  { label: "X", icon: TwitterLogo, href:""}
+  { label: 'Github', icon: GithubLogo, href: '' },
+  { label: 'Linkedin', icon: LinkedinLogo, href: '' },
+  { label: 'Instagram', icon: InstagramLogo, href: '' },
+  { label: 'X', icon: TwitterLogo, href: '' },
 ]
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
+  const t = useTranslations('navbar')
 
   const brutalistStyle =
     'border-2 border-black bg-background text-foreground shadow-[4px_4px_0px_black] rounded-none'
@@ -69,7 +71,7 @@ const Navbar = () => {
               className="rounded-none px-4 py-2 border-2 group border-black text-sm font-bold text-foreground shadow-[2px_2px_0px_black] hover:bg-primary hover:text-white transition"
             >
               <div className="flex items-center gap-2">
-                <span className="hidden sm:inline uppercase tracking-wide">Menu</span>
+                <span className="hidden sm:inline uppercase tracking-wide">{t('menu')}</span>
                 <div className="flex flex-col justify-center gap-[4px]">
                   <div className="w-5 h-[2px] bg-foreground group-hover:bg-background" />
                   <div className="w-3 h-[2px] bg-foreground group-hover:bg-background" />
@@ -96,7 +98,7 @@ const Navbar = () => {
                           onClick={() => setMenuOpen(false)}
                           className="block p-3 transition-colors duration-200 ease-in-out hover:bg-primary hover:text-primary-foreground"
                         >
-                          {item.label}
+                          {t(`menuItems.${item.key}`)}
                         </Link>
                       </li>
                     ))}
@@ -108,7 +110,7 @@ const Navbar = () => {
                   {/* Bagian Ikon Sosial */}
                   <div className="px-2 pb-2">
                     <h3 className="mb-2 px-1 text-xs font-bold uppercase tracking-wider text-muted-foreground">
-                      Follow Us
+                      {t('followUs')}
                     </h3>
                     <ul className="flex items-center justify-around">
                       {icon.map((item) => {

@@ -4,19 +4,15 @@ import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import DiagonalBanner from './DiagonalBanner'
+import { useTranslations } from 'next-intl'
 
-// Membuat komponen Button yang bisa dianimasikan oleh Framer Motion
 const MotionButton = motion(Button)
 
 const HeroSection = () => {
+  const t = useTranslations('hero')
+
   return (
     <section className="relative w-full border-t border-b border-foreground bg-background text-foreground">
-      {/* Background solid dengan kesan tegas (tanpa blur atau glow) */}
-      {/* <div className="absolute inset-0 -z-10 bg-background" /> */}
-
-      {/* <div className='-rotate-90 absolute top-1/2 left-1/10 z-50'>
-        <p>Designeer</p>
-      </div> */}
       <DiagonalBanner textOverride="DESIGNEER — UI/UX, Web, and Mobile Product Studio" degree={93} top="170%" left="12.3%" className='hidden lg:block'/>
       <DiagonalBanner degree={30} left={"95%"} top={"35%"}/>
       <DiagonalBanner degree={-10} top={"90%"} className=""/>
@@ -30,9 +26,9 @@ const HeroSection = () => {
             transition={{ duration: 0.8, ease: 'easeOut' }}
             className="text-5xl font-extrabold uppercase leading-tight tracking-tighter sm:text-6xl md:text-7xl lg:text-[6rem]"
           >
-            Design. Code. <br />
+            {t('title.part1')} <br />
             <span className="border border-black bg-secondary px-4 text-background shadow-[8px_4px_0_rgba(0,0,0,1)]">
-              Experience.
+              {t('title.part2')}
             </span>
           </motion.h1>
 
@@ -43,9 +39,7 @@ const HeroSection = () => {
             transition={{ delay: 0.3, duration: 0.8, ease: 'easeOut' }}
             className="mx-auto max-w-2xl text-lg text-muted-foreground sm:mx-0 md:text-xl"
           >
-            Kami membangun website yang{' '}
-            <strong className="text-foreground">berfungsi dan berkesan</strong> — desain
-            tajam, UX kuat, dan performa maksimal.
+            {t('subheading')}
           </motion.p>
 
           {/* CTA Buttons */}
@@ -55,8 +49,7 @@ const HeroSection = () => {
             transition={{ delay: 0.6, duration: 0.8, ease: 'easeOut' }}
             className="flex flex-col gap-4 sm:flex-row sm:gap-6 justify-center sm:justify-start"
           >
-            <Link href="/portfolio">
-              {/* Tombol kini menggunakan MotionButton dengan animasi hover dan tap */}
+            <Link href="#our-works">
               <MotionButton
                 size="lg"
                 className="text-base font-bold uppercase border border-foreground shadow-[4px_4px_0px_black] rounded-none text-white"
@@ -64,11 +57,10 @@ const HeroSection = () => {
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: 'spring', stiffness: 300, damping: 15 }}
               >
-                Lihat Portofolio
+                {t('cta.portfolio')}
               </MotionButton>
             </Link>
             <Link href="/contact">
-              {/* Tombol kini menggunakan MotionButton dengan animasi hover dan tap */}
               <MotionButton
                 variant="secondary"
                 size="lg"
@@ -77,7 +69,7 @@ const HeroSection = () => {
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: 'spring', stiffness: 300, damping: 15 }}
               >
-                Mari Berkolaborasi
+                {t('cta.contact')}
               </MotionButton>
             </Link>
           </motion.div>

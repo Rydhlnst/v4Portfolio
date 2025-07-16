@@ -3,8 +3,11 @@
 import { Button } from '@/components/ui/button'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 
 const CallToActionSection = () => {
+  const t = useTranslations('cta')
+
   return (
     <section className="py-20 border-y border-black bg-primary text-background">
       <div className="max-w-6xl mx-auto px-6 flex flex-col lg:flex-row items-start lg:items-end justify-between gap-10">
@@ -17,7 +20,8 @@ const CallToActionSection = () => {
             transition={{ duration: 0.8, ease: 'easeOut' }}
             className="text-4xl sm:text-5xl md:text-6xl font-extrabold uppercase leading-tight tracking-tight"
           >
-            Let&apos;s Build <br /> Something <span className="underline underline-offset-4">Great</span> Together
+            {t('title.part1')} <br />
+            {t('title.part2')} <span className="underline underline-offset-4">{t('title.highlight')}</span>
           </motion.h2>
 
           <motion.p
@@ -26,7 +30,7 @@ const CallToActionSection = () => {
             transition={{ delay: 0.2, duration: 0.6 }}
             className="text-base sm:text-lg md:text-xl text-background/90 max-w-2xl"
           >
-            Ingin mulai proyek baru, redesign aplikasi, atau konsultasi ide? Kami siap bantu wujudkan dengan strategi, desain, dan eksekusi terbaik.
+            {t('description')}
           </motion.p>
         </div>
 
@@ -42,7 +46,7 @@ const CallToActionSection = () => {
               size="lg"
               className="text-foreground bg-background font-bold uppercase border-2 border-black rounded-none shadow-[4px_4px_0px_black] hover:shadow-[6px_6px_0px_black] transition-all duration-300"
             >
-              Contact Us
+              {t('button')}
             </Button>
           </Link>
         </motion.div>
